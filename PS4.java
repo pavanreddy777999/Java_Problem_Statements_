@@ -12,6 +12,8 @@ public class Main
         float BasePay=sc.nextFloat();
         System.out.println("Enter number of hours worked by the employee");
         int hours=sc.nextInt();
+        if(BasePay==12)
+        {
         if(hours>=40&&hours<=60)
         {
             int hrs=hours-40;
@@ -26,5 +28,10 @@ public class Main
             sal=hours*BasePay;
         }
         System.out.println("Salary of employee:"+sal+"$");
+        }
+        else
+        {
+            System.out.println("Salary of employee:0.0$");
+        }
     }
 }
